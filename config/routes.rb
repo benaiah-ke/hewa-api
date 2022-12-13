@@ -3,9 +3,14 @@ Rails.application.routes.draw do
 
   post '/signup', to: 'users#create'
   post '/login', to: 'sessions#create'
-  delete '/logout', to: 'sessions#destroy'
-  patch '/account-type', to: 'users#update'
   get '/me', to: 'users#show'
+  delete '/logout', to: 'sessions#destroy'
+  
+  patch '/account-type', to: 'users#update'
+  
+  post '/emmitters', to: 'emmitters#create'
+  patch '/emmiters', to: 'emmitters#update'
+  post '/offsetters', to: 'offsetters#create'
 
   # Defines the root path route ("/")
   # root "articles#index"
