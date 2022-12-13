@@ -10,6 +10,11 @@ class SessionsController < ApplicationController
         end
     end
 
+    def destroy
+        session.delete(:user_id)
+        render json: {logout: true}, status: :no_content
+    end
+
     private
 
     def login_params
