@@ -1,5 +1,5 @@
 class UserSerializer < ActiveModel::Serializer
   attributes :id, :name, :email, :phone, :location
 
-  has_many :emmitters, :offsetters
+  has_one :emmitters, :offsetters
 end
