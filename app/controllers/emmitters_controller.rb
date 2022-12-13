@@ -15,6 +15,10 @@ class EmmittersController < ApplicationController
 
     private
 
+    def emmitter_params
+        params.permit(:annual_emmission)
+    end
+
     def render_unprocessable_entity(invalid)
         render json: {errors: invalid.record.errors.full_messages, session: session }, status: :unprocessable_entity
     end

@@ -10,14 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_12_13_100553) do
+ActiveRecord::Schema[7.0].define(version: 2022_12_13_122942) do
   create_table "carbon_projects", force: :cascade do |t|
-    t.integer "user_id"
     t.integer "no_of_trees"
     t.integer "avarage_age"
     t.string "location"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "offsetter_id"
   end
 
   create_table "emmitters", force: :cascade do |t|

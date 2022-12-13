@@ -1,6 +1,6 @@
 class User < ApplicationRecord
     has_secure_password
 
-    has_one :offsetters
-    has_one :emmitters
+    has_many :offsetters
+    has_many :emmitters
 end
