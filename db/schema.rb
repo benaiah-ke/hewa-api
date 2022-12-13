@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_12_13_084130) do
+ActiveRecord::Schema[7.0].define(version: 2022_12_13_100553) do
   create_table "carbon_projects", force: :cascade do |t|
     t.integer "user_id"
     t.integer "no_of_trees"
@@ -41,6 +41,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_13_084130) do
     t.string "password_digest"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "account_type"
   end
 
 end
