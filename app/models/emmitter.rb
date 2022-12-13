@@ -1,0 +1,2 @@
+class Emmitter < ApplicationRecord
+end

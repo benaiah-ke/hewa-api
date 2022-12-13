@@ -1,0 +1,2 @@
+class CarbonProjectsController < ApplicationController
+end

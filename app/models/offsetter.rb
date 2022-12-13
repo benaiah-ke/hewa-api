@@ -1,0 +1,2 @@
+class Offsetter < ApplicationRecord
+end

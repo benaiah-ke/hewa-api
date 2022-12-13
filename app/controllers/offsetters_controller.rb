@@ -1,0 +1,2 @@
+class OffsettersController < ApplicationController
+end
